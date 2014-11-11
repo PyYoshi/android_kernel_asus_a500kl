@@ -1,0 +1,15 @@
+menu "Sensors driver"
+
+config SENSORS_PROXM
+	tristate "PS ALS proxm_class support"
+	depends on I2C=y
+	help
+	  ASUS SENSORS folder
+
+config SENSORS_CM36283
+	tristate "PS ALS CM36283 support"
+	depends on I2C=y
+	help
+	  ASUS SENSORS folder
+
+endmenu
